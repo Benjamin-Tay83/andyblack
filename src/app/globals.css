@@ -71,3 +71,128 @@ html {
 .fixed.inset-0 > .absolute.w-96 {
   animation: float 10s ease-in-out infinite;
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Float upward */
+  }
+  100% {
+    transform: translateY(0); /* Return to initial position */
+  }
+}
+
+/* Apply animation to the class */
+.animate-float {
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /* Makes it loop forever */
+  animation-delay: 0s;
+  animation-duration: 6s;
+}
+
+
+/* Gradient background for the section */
+.section {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section .gradient-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(6, 182, 212, 0.2), rgba(30, 58, 138, 0.2), rgba(162, 28, 175, 0.2));
+}
+
+.section .container {
+  position: relative;
+  z-index: 10;
+}
+
+.section .container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section .container p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section .cta-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #06b6d4, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+.section .cta-button:hover {
+  background: linear-gradient(to right, #06b6d4, #9333ea);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section .cta-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Dynamic circles */
+.section .circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(3xl);
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+.section .circle1 {
+  top: 25%;
+  left: 25%;
+  width: 24rem;
+  height: 24rem;
+  transform: scale(1.18);
+}
+
+.section .circle2 {
+  bottom: 25%;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background-color: rgba(128, 90, 164, 0.1);
+  transform: scale(1.16);
+}
+
+.section .circle3 {
+  top: 50%;
+  left: 50%;
+  width: 37.5rem;
+  height: 37.5rem;
+  background: linear-gradient(to right, rgba(6, 182, 212, 0.05), rgba(128, 90, 164, 0.05), rgba(244, 114, 182, 0.05));
+  transform: rotate(255.204deg) translateX(-50%) translateY(-50%);
+}
+
+@keyframes counter {
+  0%   { left:0px; top:-10px; opacity: 0;}
+  100% { left:0px; top:0px;}
+}

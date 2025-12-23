@@ -20,6 +20,12 @@ export default function Home() {
     minutes: "17",
     seconds: "36",
   });
+  const [boooTime, setBoolTime] = useState({
+    days: false,
+    hours: false,
+    minutes: false,
+    seconds: false,
+  });
 
   useEffect(() => {
     const targetDate = new Date("2026-01-01T00:00:00").getTime();
@@ -35,11 +41,46 @@ export default function Home() {
           (difference % (1000 * 60 * 60)) / (1000 * 60)
         );
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-        setTimeLeft({
-          days: days.toString().padStart(2, "0"),
-          hours: hours.toString().padStart(2, "0"),
-          minutes: minutes.toString().padStart(2, "0"),
-          seconds: seconds.toString().padStart(2, "0"),
+
+        const newDays = days.toString().padStart(2, "0");
+        const newHours = hours.toString().padStart(2, "0");
+        const newMinutes = minutes.toString().padStart(2, "0");
+        const newSeconds = seconds.toString().padStart(2, "0");
+
+        setTimeLeft((prev) => {
+          const changes = {
+            days: newDays !== prev.days,
+            hours: newHours !== prev.hours,
+            minutes: newMinutes !== prev.minutes,
+            seconds: newSeconds !== prev.seconds,
+          };
+
+          // Trigger animations for changed digits
+          if (
+            changes.days ||
+            changes.hours ||
+            changes.minutes ||
+            changes.seconds
+          ) {
+            setBoolTime(changes);
+
+            // Reset animations after 0.5s
+            setTimeout(() => {
+              setBoolTime({
+                days: false,
+                hours: false,
+                minutes: false,
+                seconds: false,
+              });
+            }, 500);
+          }
+
+          return {
+            days: newDays,
+            hours: newHours,
+            minutes: newMinutes,
+            seconds: newSeconds,
+          };
         });
       }
     };
@@ -389,7 +430,18 @@ export default function Home() {
               </span>
               <div className="flex items-center gap-1">
                 <div className="flex flex-col items-center">
-                  <div className="text-xl md:text-2xl font-bold text-white tabular-nums">
+                  <div
+                    className="text-xl md:text-2xl font-bold text-white tabular-nums "
+                    style={
+                      boooTime.days
+                        ? {
+                            position: "relative",
+                            animationName: "counter",
+                            animationDuration: "0.1s",
+                          }
+                        : {}
+                    }
+                  >
                     {timeLeft.days}
                   </div>
                   <span className="text-[10px] text-cyan-300 uppercase tracking-wider">
@@ -398,7 +450,18 @@ export default function Home() {
                 </div>
                 <span className="text-cyan-400 font-bold">:</span>
                 <div className="flex flex-col items-center">
-                  <div className="text-xl md:text-2xl font-bold text-white tabular-nums">
+                  <div
+                    className="text-xl md:text-2xl font-bold text-white tabular-nums"
+                    style={
+                      boooTime.hours
+                        ? {
+                            position: "relative",
+                            animationName: "counter",
+                            animationDuration: "0.1s",
+                          }
+                        : {}
+                    }
+                  >
                     {timeLeft.hours}
                   </div>
                   <span className="text-[10px] text-cyan-300 uppercase tracking-wider">
@@ -407,7 +470,18 @@ export default function Home() {
                 </div>
                 <span className="text-cyan-400 font-bold">:</span>
                 <div className="flex flex-col items-center">
-                  <div className="text-xl md:text-2xl font-bold text-white tabular-nums">
+                  <div
+                    className="text-xl md:text-2xl font-bold text-white tabular-nums"
+                    style={
+                      boooTime.minutes
+                        ? {
+                            position: "relative",
+                            animationName: "counter",
+                            animationDuration: "0.1s",
+                          }
+                        : {}
+                    }
+                  >
                     {timeLeft.minutes}
                   </div>
                   <span className="text-[10px] text-cyan-300 uppercase tracking-wider">
@@ -419,7 +493,18 @@ export default function Home() {
                 </span>
                 <span className="hidden sm:block">
                   <div className="flex flex-col items-center">
-                    <div className="text-xl md:text-2xl font-bold text-white tabular-nums">
+                    <div
+                      className="text-xl md:text-2xl font-bold text-white tabular-nums"
+                      style={
+                        boooTime.seconds
+                          ? {
+                              position: "relative",
+                              animationName: "counter",
+                              animationDuration: "0.1s",
+                            }
+                          : {}
+                      }
+                    >
                       {timeLeft.seconds}
                     </div>
                     <span className="text-[10px] text-cyan-300 uppercase tracking-wider">
@@ -1386,6 +1471,47 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <footer className="py-12 relative border-t border-white/10 bg-black/20 backdrop-blur-sm">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+              <div className="flex items-center gap-5">
+                <img
+                  src="/assets/images/logo.png"
+                  alt="SnapCoat CRM"
+                  className="h-16 w-auto opacity-80"
+                />
+                <div>
+                  <div className="text-white font-bold text-xl">
+                    SnapCoat CRM
+                  </div>
+                  <div className="text-white/40 text-sm">
+                    © 2025 SnapCoat LLC
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-8">
+                <a
+                  href="/features"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Features
+                </a>
+                <a
+                  href="/privacy"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Privacy
+                </a>
+                <a
+                  href="/beta-bug-report"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Beta Feedback
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
