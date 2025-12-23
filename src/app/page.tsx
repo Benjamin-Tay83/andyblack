@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
