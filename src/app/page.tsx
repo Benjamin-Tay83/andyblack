@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedButton from "@/components/AnimatedButton";
 import { useState, useEffect } from "react";
 
 export default function Home() {
