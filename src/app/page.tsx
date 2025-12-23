@@ -89,6 +89,279 @@ export default function Home() {
     <div id="root">
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 relative overflow-hidden">
         <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 text-white py-2">
+          <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+            <div
+              className="absolute"
+              style={{
+                left: "45.1378%",
+                top: "69.1801%",
+                width: "9.31695px",
+                height: "9.31695px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "2px",
+                transform: "translateY(64.7019vh) rotate(262.724deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "32.5925%",
+                top: "20.128%",
+                width: "9.76691px",
+                height: "9.76691px",
+                backgroundColor: "rgba(16, 185, 129, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(82.5131px) translateY(98.0581vh) rotate(398.751deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "56.3188%",
+                top: "94.4442%",
+                width: "10.6959px",
+                height: "10.6959px",
+                backgroundColor: "rgba(236, 72, 153, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(83.4127px) translateY(91.7331vh) rotate(537.986deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "25.7897%",
+                top: "92.0705%",
+                width: "6.92607px",
+                height: "6.92607px",
+                backgroundColor: "rgba(16, 185, 129, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(5.39244px) translateY(38.2117vh) rotate(172.766deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "2.18755%",
+                top: "57.095%",
+                width: "5.15359px",
+                height: "5.15359px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(-59.3313px) translateY(78.3974vh) rotate(348.367deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "87.9069%",
+                top: "43.6141%",
+                width: "6.49113px",
+                height: "6.49113px",
+                backgroundColor: "rgba(59, 130, 246, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(-65.4618px) translateY(68.2659vh) rotate(365.938deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "6.24198%",
+                top: "41.0365%",
+                width: "8.66438px",
+                height: "8.66438px",
+                backgroundColor: "rgba(168, 85, 247, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(-26.388px) translateY(94.4401vh) rotate(569.18deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "85.1789%",
+                top: "96.8165%",
+                width: "6.90924px",
+                height: "6.90924px",
+                backgroundColor: "rgba(168, 85, 247, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(4.19358px) translateY(6.38306vh) rotate(156.451deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "11.4923%",
+                top: "19.0975%",
+                width: "8.44291px",
+                height: "8.44291px",
+                backgroundColor: "rgba(236, 72, 153, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(55.6416px) translateY(56.2401vh) rotate(494.583deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "60.374%",
+                top: "7.68589%",
+                width: "5.53856px",
+                height: "5.53856px",
+                backgroundColor: "rgba(168, 85, 247, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(29.0535px) translateY(70.498vh) rotate(290.222deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "9.00875%",
+                top: "4.38526%",
+                width: "6.17933px",
+                height: "6.17933px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(-21.8508px) translateY(40.1653vh) rotate(452.503deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "57.0371%",
+                top: "64.5891%",
+                width: "7.81948px",
+                height: "7.81948px",
+                backgroundColor: "rgba(236, 72, 153, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(-16.3828px) translateY(16.3829vh) rotate(102.841deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "40.6982%",
+                top: "33.9668%",
+                width: "10.2494px",
+                height: "10.2494px",
+                backgroundColor: "rgba(168, 85, 247, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(-26.6045px) translateY(49.5823vh) rotate(325.717deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "4.03679%",
+                top: "68.6226%",
+                width: "8.02063px",
+                height: "8.02063px",
+                backgroundColor: "rgba(16, 185, 129, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(34.2137px) translateY(81.4288vh) rotate(366.357deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "36.6339%",
+                top: "93.5563%",
+                width: "10.3537px",
+                height: "10.3537px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(10.7808px) translateY(10.883vh) rotate(298.201deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "72.2671%",
+                top: "13.6367%",
+                width: "7.69273px",
+                height: "7.69273px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(10.9555px) translateY(16.8472vh) rotate(351.416deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "27.5998%",
+                top: "86.4886%",
+                width: "9.56523px",
+                height: "9.56523px",
+                backgroundColor: "rgba(59, 130, 246, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(-12.6375px) translateY(43.8948vh) rotate(471.298deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "88.8416%",
+                top: "43.2735%",
+                width: "7.37114px",
+                height: "7.37114px",
+                backgroundColor: "rgba(16, 185, 129, 0.6)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(-66.1692px) translateY(68.8261vh) rotate(477.048deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "32.6366%",
+                top: "7.12042%",
+                width: "4.58746px",
+                height: "4.58746px",
+                backgroundColor: "rgba(236, 72, 153, 0.6)",
+                borderRadius: "50%",
+                transform:
+                  "translateX(-40.2166px) translateY(53.5516vh) rotate(492.547deg)",
+              }}
+            ></div>
+            <div
+              className="absolute"
+              style={{
+                left: "86.3557%",
+                top: "59.056%",
+                width: "10.5045px",
+                height: "10.5045px",
+                backgroundColor: "rgba(251, 191, 36, 0.5)",
+                borderRadius: "2px",
+                transform:
+                  "translateX(12.2602px) translateY(81.8013vh) rotate(488.095deg)",
+              }}
+            ></div>
+            <div
+              className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"
+              style={{ transform: "scale(1.18637)" }}
+            ></div>
+            <div
+              className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
+              style={{ transform: "scale(1.15813)" }}
+            ></div>
+            <div
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/5 via-purple-500/5 to-pink-500/5 rounded-full blur-3xl"
+              style={{ transform: "rotate(255.204deg)" }}
+            ></div>
+          </div>
           <div className="container mx-auto px-4 flex items-center justify-center gap-4">
             <span className="text-lg">🎆</span>
             <span className="font-bold text-sm md:text-base">

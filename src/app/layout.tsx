@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SnapCoat CRM - The AI-Powered CRM Built for Painting Contractors",
+  title: "AndyBlack",
   description:
     "Built for painting contractors. AI-powered proposals, visual sales pipeline, and project scheduling.",
 };
